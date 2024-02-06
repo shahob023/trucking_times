@@ -1,0 +1,288 @@
+@media ((min-width: 1024px) and (max-width: 1440px)) {
+  .header {
+    width: 100%;
+    height: 700px;
+    .header__top {
+      margin-bottom: 50px;
+      .header__right {
+        .header__ul {
+          display: none;
+        }
+        .burger {
+          display: block;
+        }
+        .header__btn {
+          width: 181px;
+        }
+      }
+    }
+    .hero {
+      padding-left: 46px;
+      &__title {
+        margin-bottom: 20px;
+        font-size: 40px;
+      }
+      &__text {
+        margin-bottom: 30px;
+        font-size: 18px;
+      }
+      .btn__holder {
+        margin-bottom: 50px;
+        .btn1 {
+          width: 230px;
+        }
+      }
+    }
+  }
+  .main {
+    width: 100%;
+    .information {
+      height: 407px;
+      &__left {
+        .left__holder {
+          margin-left: 46px;
+          h3 {
+            margin-bottom: 20px;
+            margin-top: 47px;
+          }
+          p {
+            font-size: 16px;
+            width: 493px;
+            margin-bottom: 32px;
+          }
+        }
+      }
+    }
+    .expedition {
+      height: 551px;
+      .card__holder {
+        gap: 20px;
+        .card {
+          max-width: 340px;
+          max-height: 411px;
+          padding: 20px;
+          h2 {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 15px;
+          }
+          p {
+            font-size: 15px;
+            width: 300px;
+            margin-bottom: 20px;
+          }
+          img {
+            width: 300px;
+            height: 160px;
+          }
+          .unique {
+            margin-bottom: -1px;
+          }
+        }
+      }
+    }
+    .mission {
+      padding-left: 46px;
+    }
+    .company__holder {
+      height: 1007px;
+      .desc__wrapper {
+        margin-bottom: 70px;
+      }
+      .career__holder {
+        width: 1060px;
+        height: 404px;
+        margin-bottom: 70px;
+        .career__left {
+          width: 393px;
+          padding-left: 90px;
+          padding-top: 67px;
+        }
+        .career__right {
+          img {
+            width: 610px;
+            height: 100%;
+          }
+        }
+      }
+      .partner__page {
+        width: 1060px;
+        margin-bottom: 94px;
+        .partner__title {
+          margin-bottom: 74px;
+        }
+      }
+    }
+  }
+  .footer {
+    .inform {
+      height: 172px;
+      padding-left: 46px;
+      &__holder {
+        gap: 45px;
+        h3 {
+          font-size: 15px;
+        }
+        p {
+          font-size: 15px;
+        }
+        a {
+          font-size: 15px;
+        }
+      }
+    }
+    .privacy {
+      .privacy__holder {
+        padding-left: 46px;
+        display: flex;
+        gap: 300px;
+        .privacy__left {
+          p {
+            font-size: 15px;
+            line-height: 18;
+          }
+        }
+      }
+    }
+  }
+}
+@media ((min-width: 768px) and (max-width: 1024px)) {
+  .header {
+    width: 1024px;
+    height: 752px;
+    &__top {
+      margin-bottom: 69px;
+      .header__left {
+        .messenjer__holder {
+          display: none;
+        }
+        .tel__holder {
+          display: none;
+        }
+      }
+      .header__right {
+        .header__ul {
+          display: none;
+        }
+        .burger {
+          display: block;
+        }
+        .header__btn {
+          width: 181px;
+        }
+      }
+    }
+    .hero {
+      padding-left: 0;
+      &__title {
+        margin-bottom: 20px;
+        font-size: 24px;
+        padding-left: 34px;
+      }
+      &__text {
+        margin-bottom: 30px;
+        font-size: 15px;
+        padding-left: 34px;
+      }
+      .btn__holder {
+        padding-left: 34px;
+        .btn1 {
+          width: 230px;
+        }
+      }
+      .timee {
+        height: 292px;
+        background: #212529;
+        h3 {
+          padding-left: 34px;
+          padding-top: 30px;
+        }
+        .time__ul {
+          padding-left: 34px;
+        }
+        .time__line {
+          padding-left: 34px;
+        }
+        .time__text {
+          padding-left: 34px;
+        }
+      }
+    }
+  }
+  .main{
+    width: 1024px;
+    .information{
+        display: flex;
+        flex-direction: column-reverse;
+        &__left{
+            width: 100%;
+            .left__holder{
+                padding-left: 34px;
+                height: 330px;
+                h3{
+                    margin-top: 30px;
+                    margin-bottom: 20px;
+                }
+                p{
+                    width: 100%;
+                    font-size: 16px;
+                    margin-bottom: 32px;
+                    margin-right: 33px;
+                }
+            }
+        }
+        &__right{
+            height: 430px;
+            width: 100%;
+        }
+    }
+    .working__type{
+        flex-direction: column;
+        .drive__img{
+            height: 430px;
+        }
+        .information__left{
+            .working__right{
+                margin-left: 34px;
+                h3{
+                    margin-top: 30px;
+                    margin-bottom: 20px;
+                }
+                p{
+                    width: 100%;
+                    font-size: 16px;
+                    margin-bottom: 32px;
+                    margin-right: 33px;
+                }
+            }
+        }
+    }
+    .expedition{
+        .card__holder{
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+            .card{
+                width: 340px;
+                height: 411px;
+            }
+        }
+    }
+    .mission{
+        height: 300px;
+        padding-left: 34px;
+        &__title{
+            padding-top: 87px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        &__text{
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+        &__subtext{
+            font-size: 15px;
+        }
+    }
+  }
+}

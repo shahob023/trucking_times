@@ -1,0 +1,912 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-BlackItalic.woff2") format("woff2"), url("../fonts/Montserrat-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-BoldItalic.woff2") format("woff2"), url("../fonts/Montserrat-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Italic.woff2") format("woff2"), url("../fonts/Montserrat-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-MediumItalic.woff2") format("woff2"), url("../fonts/Montserrat-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBoldItalic.woff2") format("woff2"), url("../fonts/Montserrat-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 255px;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-image: url(../images/header-bg.png);
+  background-repeat: no-repeat;
+  width: 1920px;
+  height: 1080px;
+}
+.header__top {
+  height: 100px;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.header__top .header__left {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.header__top .header__left .header__logo {
+  padding-left: 30px;
+}
+.header__top .header__left .messenjer__holder {
+  display: flex;
+  gap: 10px;
+}
+.header__top .header__left .tel__holder {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.header__top .header__left .tel__holder .phone__number {
+  color: rgb(243, 243, 243);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration: none;
+}
+.header__top .header__right {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.header__top .header__right .header__ul {
+  display: flex;
+  gap: 40px;
+}
+.header__top .header__right .header__ul .list__text {
+  color: rgb(243, 243, 243);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.header__top .header__right .header__ul #service {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.header__top .header__right .header__ul #service .option__text {
+  background: blue;
+}
+.header__top .header__right .burger {
+  display: none;
+}
+.header__top .header__right .header__btn {
+  cursor: pointer;
+  width: 211px;
+  height: 100px;
+  border: none;
+  background: rgb(106, 54, 156);
+}
+.header__top .header__right .header__btn .list__text {
+  color: rgb(243, 243, 243);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+.header .hero {
+  padding-left: 255px;
+}
+.header .hero__title {
+  color: rgb(243, 243, 243);
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 68px;
+  letter-spacing: 0%;
+  margin-bottom: 30px;
+}
+.header .hero__text {
+  color: rgb(243, 243, 243);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0%;
+  margin-bottom: 40px;
+  max-width: 570px;
+}
+.header .hero .btn__holder {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+.header .hero .btn__holder .btn1 {
+  width: 230px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  box-sizing: border-box;
+  border: 2px solid rgb(243, 243, 243);
+  cursor: pointer;
+}
+.header .hero .btn__holder .btn1 a {
+  color: rgb(243, 243, 243);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+.header .hero .btn__holder .btn2 {
+  width: 230px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  box-sizing: border-box;
+  border: 2px solid rgb(243, 243, 243);
+  cursor: pointer;
+}
+.header .hero .btn__holder .btn2 a {
+  color: rgb(243, 243, 243);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+.header .hero .btn__holder .btn1:hover {
+  background: rgb(243, 243, 243);
+  transform: rotate(1080px);
+  transition: all;
+  transition-duration: 0.8s;
+}
+.header .hero .btn__holder .btn1:hover a {
+  color: rgb(0, 0, 0);
+}
+.header .hero .btn__holder .btn2:hover {
+  background: rgb(243, 243, 243);
+  transform: rotate(1080px);
+  transition: all;
+  transition-duration: 0.8s;
+}
+.header .hero .btn__holder .btn2:hover a {
+  color: rgb(0, 0, 0);
+}
+.header .hero .time__title {
+  color: rgb(243, 243, 243);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0%;
+  margin-bottom: 30px;
+}
+.header .hero .time__ul {
+  display: flex;
+  gap: 50px;
+}
+.header .hero .time__ul li {
+  margin-bottom: 30px;
+}
+.header .hero .time__ul .green {
+  color: rgb(4, 255, 20);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0%;
+  margin-bottom: 10px;
+}
+.header .hero .time__ul .green__subtext {
+  color: rgb(243, 243, 243);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+.header .hero .time__line {
+  margin-bottom: 9px;
+}
+.header .hero .time__text {
+  display: flex;
+  gap: 63px;
+  margin-left: -12px;
+}
+.header .hero .time__text li {
+  color: rgb(243, 243, 243);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+
+.main {
+  width: 1920px;
+}
+.main .information {
+  display: flex;
+  height: 570px;
+}
+.main .information__left {
+  width: 50%;
+  background: #212529;
+}
+.main .information__left .left__holder {
+  padding-left: 255px;
+}
+.main .information__left .left__holder h3 {
+  color: rgb(243, 243, 243);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0%;
+  margin-bottom: 25px;
+  margin-top: 111px;
+}
+.main .information__left .left__holder p {
+  width: 600px;
+  color: rgb(243, 243, 243);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  margin-bottom: 41px;
+}
+.main .information__left .left__holder .link__div {
+  display: flex;
+  gap: 10px;
+}
+.main .information__left .left__holder .link__div a {
+  color: rgb(4, 255, 20);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0%;
+  align-items: center;
+}
+.main .information__right {
+  width: 50%;
+  height: 100%;
+}
+.main .information__right img {
+  width: 100%;
+  height: 100%;
+}
+.main .working__type {
+  display: flex;
+}
+.main .working__type .working__right {
+  margin-left: 136px;
+}
+.main .expedition {
+  height: 763px;
+  background: #272b30;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .expedition .card__holder {
+  display: flex;
+  gap: 30px;
+}
+.main .expedition .card__holder .card {
+  max-width: 450px;
+  max-height: 523px;
+  background: rgb(33, 37, 41);
+  padding: 30px;
+}
+.main .expedition .card__holder .card h2 {
+  color: rgb(243, 243, 243);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0%;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.main .expedition .card__holder .card p {
+  color: rgb(243, 243, 243);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  margin-bottom: 60px;
+  width: 390px;
+}
+.main .mission {
+  background-image: url("../images/mission_bg.png");
+  width: 1920px;
+  height: 400px;
+  padding-left: 255px;
+}
+.main .mission__title {
+  color: rgb(243, 243, 243);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0%;
+  margin-bottom: 20px;
+  padding-top: 114px;
+}
+.main .mission__text {
+  color: rgb(243, 243, 243);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  margin-bottom: 24px;
+  width: 516px;
+}
+.main .mission__subtext {
+  color: rgb(243, 243, 243);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+.main .company__holder {
+  width: 1920px;
+  height: 1272px;
+  background: rgb(33, 37, 41);
+}
+.main .company__holder .desc__wrapper {
+  display: flex;
+  gap: 110px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 109px;
+  margin-bottom: 120px;
+}
+.main .company__holder .desc__wrapper .desc__frame .desc__title {
+  color: rgb(243, 243, 243);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0%;
+  margin-bottom: 20px;
+}
+.main .company__holder .desc__wrapper .desc__frame .desc__subtitle {
+  color: rgb(243, 243, 243);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+}
+.main .company__holder .desc__wrapper .descList__frame {
+  list-style: square;
+}
+.main .company__holder .desc__wrapper .descList__frame li::marker {
+  color: rgb(4, 255, 20);
+}
+.main .company__holder .desc__wrapper .descList__frame li {
+  color: rgb(243, 243, 243);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 180%;
+  letter-spacing: 0%;
+}
+.main .company__holder .career__holder {
+  width: 1410px;
+  height: 450px;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 120px;
+}
+.main .company__holder .career__holder .career__left {
+  width: 600px;
+  background: rgb(82, 31, 132);
+  padding-left: 120px;
+  padding-top: 119px;
+  position: relative;
+}
+.main .company__holder .career__holder .career__left h3 {
+  color: rgb(243, 243, 243);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 180%;
+  letter-spacing: 0%;
+  margin-bottom: 20px;
+}
+.main .company__holder .career__holder .career__left h4 {
+  color: rgb(164, 102, 225);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 180%;
+  letter-spacing: 0%;
+}
+.main .company__holder .career__holder .career__left p {
+  color: rgb(164, 102, 225);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 180%;
+  letter-spacing: 0%;
+  margin-bottom: 35px;
+}
+.main .company__holder .career__holder .career__left .career__btn {
+  width: 288px;
+  height: 46px;
+  box-sizing: border-box;
+  border: 2px solid rgb(243, 243, 243);
+  background: transparent;
+}
+.main .company__holder .career__holder .career__left .career__btn a {
+  color: rgb(243, 243, 243);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+.main .company__holder .career__holder .career__left .career__btn:hover {
+  background-color: white;
+  transition: 0.8s;
+}
+.main .company__holder .career__holder .career__left .career__btn:hover a {
+  color: #212529;
+}
+.main .company__holder .career__holder .career__left .up {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.main .company__holder .partner__page {
+  width: 1410px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 148px;
+}
+.main .company__holder .partner__page .partner__title {
+  color: rgb(243, 243, 243);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 78px;
+}
+.main .company__holder .partner__page .icons__frame {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer {
+  width: 1920px;
+}
+.footer .inform {
+  display: flex;
+  align-items: center;
+  background: rgb(33, 37, 41);
+  height: 226px;
+  padding-left: 255px;
+}
+.footer .inform__holder {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 80px;
+}
+.footer .inform__holder .contact p {
+  color: rgb(243, 243, 243);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0%;
+  margin-bottom: 27px;
+}
+.footer .inform__holder h3 {
+  color: rgb(175, 175, 175);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  margin-bottom: 14px;
+}
+.footer .inform__holder p {
+  color: rgb(243, 243, 243);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+.footer .inform__holder a {
+  color: rgb(243, 243, 243);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+.footer .privacy {
+  display: flex;
+  align-items: center;
+  height: 101px;
+  background: rgb(39, 43, 48);
+}
+.footer .privacy .privacy__holder {
+  display: flex;
+  align-items: center;
+  gap: 300px;
+  padding-left: 255px;
+}
+.footer .privacy .privacy__holder .privacy__left p {
+  color: rgb(175, 175, 175);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+
+@media ((min-width: 1024px) and (max-width: 1440px)) {
+  .header {
+    width: 100%;
+    height: 700px;
+  }
+  .header .header__top {
+    margin-bottom: 50px;
+  }
+  .header .header__top .header__right .header__ul {
+    display: none;
+  }
+  .header .header__top .header__right .burger {
+    display: block;
+  }
+  .header .header__top .header__right .header__btn {
+    width: 181px;
+  }
+  .header .hero {
+    padding-left: 46px;
+  }
+  .header .hero__title {
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+  .header .hero__text {
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  .header .hero .btn__holder {
+    margin-bottom: 50px;
+  }
+  .header .hero .btn__holder .btn1 {
+    width: 230px;
+  }
+  .main {
+    width: 100%;
+  }
+  .main .information {
+    height: 407px;
+  }
+  .main .information__left .left__holder {
+    margin-left: 46px;
+  }
+  .main .information__left .left__holder h3 {
+    margin-bottom: 20px;
+    margin-top: 47px;
+  }
+  .main .information__left .left__holder p {
+    font-size: 16px;
+    width: 493px;
+    margin-bottom: 32px;
+  }
+  .main .expedition {
+    height: 551px;
+  }
+  .main .expedition .card__holder {
+    gap: 20px;
+  }
+  .main .expedition .card__holder .card {
+    max-width: 340px;
+    max-height: 411px;
+    padding: 20px;
+  }
+  .main .expedition .card__holder .card h2 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+  .main .expedition .card__holder .card p {
+    font-size: 15px;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  .main .expedition .card__holder .card img {
+    width: 300px;
+    height: 160px;
+  }
+  .main .expedition .card__holder .card .unique {
+    margin-bottom: -1px;
+  }
+  .main .mission {
+    padding-left: 46px;
+  }
+  .main .company__holder {
+    height: 1007px;
+  }
+  .main .company__holder .desc__wrapper {
+    margin-bottom: 70px;
+  }
+  .main .company__holder .career__holder {
+    width: 1060px;
+    height: 404px;
+    margin-bottom: 70px;
+  }
+  .main .company__holder .career__holder .career__left {
+    width: 393px;
+    padding-left: 90px;
+    padding-top: 67px;
+  }
+  .main .company__holder .career__holder .career__right img {
+    width: 610px;
+    height: 100%;
+  }
+  .main .company__holder .partner__page {
+    width: 1060px;
+    margin-bottom: 94px;
+  }
+  .main .company__holder .partner__page .partner__title {
+    margin-bottom: 74px;
+  }
+  .footer .inform {
+    height: 172px;
+    padding-left: 46px;
+  }
+  .footer .inform__holder {
+    gap: 45px;
+  }
+  .footer .inform__holder h3 {
+    font-size: 15px;
+  }
+  .footer .inform__holder p {
+    font-size: 15px;
+  }
+  .footer .inform__holder a {
+    font-size: 15px;
+  }
+  .footer .privacy .privacy__holder {
+    padding-left: 46px;
+    display: flex;
+    gap: 300px;
+  }
+  .footer .privacy .privacy__holder .privacy__left p {
+    font-size: 15px;
+    line-height: 18;
+  }
+}
+@media ((min-width: 768px) and (max-width: 1024px)) {
+  .header {
+    width: 1024px;
+    height: 752px;
+  }
+  .header__top {
+    margin-bottom: 69px;
+  }
+  .header__top .header__left .messenjer__holder {
+    display: none;
+  }
+  .header__top .header__left .tel__holder {
+    display: none;
+  }
+  .header__top .header__right .header__ul {
+    display: none;
+  }
+  .header__top .header__right .burger {
+    display: block;
+  }
+  .header__top .header__right .header__btn {
+    width: 181px;
+  }
+  .header .hero {
+    padding-left: 0;
+  }
+  .header .hero__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    padding-left: 34px;
+  }
+  .header .hero__text {
+    margin-bottom: 30px;
+    font-size: 15px;
+    padding-left: 34px;
+  }
+  .header .hero .btn__holder {
+    padding-left: 34px;
+  }
+  .header .hero .btn__holder .btn1 {
+    width: 230px;
+  }
+  .header .hero .timee {
+    height: 292px;
+    background: #212529;
+  }
+  .header .hero .timee h3 {
+    padding-left: 34px;
+    padding-top: 30px;
+  }
+  .header .hero .timee .time__ul {
+    padding-left: 34px;
+  }
+  .header .hero .timee .time__line {
+    padding-left: 34px;
+  }
+  .header .hero .timee .time__text {
+    padding-left: 34px;
+  }
+  .main {
+    width: 1024px;
+  }
+  .main .information {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .main .information__left {
+    width: 100%;
+  }
+  .main .information__left .left__holder {
+    padding-left: 34px;
+    height: 330px;
+  }
+  .main .information__left .left__holder h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .main .information__left .left__holder p {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 32px;
+    margin-right: 33px;
+  }
+  .main .information__right {
+    height: 430px;
+    width: 100%;
+  }
+  .main .working__type {
+    flex-direction: column;
+  }
+  .main .working__type .drive__img {
+    height: 430px;
+  }
+  .main .working__type .information__left .working__right {
+    margin-left: 34px;
+  }
+  .main .working__type .information__left .working__right h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .main .working__type .information__left .working__right p {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 32px;
+    margin-right: 33px;
+  }
+  .main .expedition .card__holder {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .main .expedition .card__holder .card {
+    width: 340px;
+    height: 411px;
+  }
+  .main .mission {
+    height: 300px;
+    padding-left: 34px;
+  }
+  .main .mission__title {
+    padding-top: 87px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .main .mission__text {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .main .mission__subtext {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=styles.css.map */

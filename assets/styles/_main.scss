@@ -1,0 +1,251 @@
+.main {
+  width: 1920px;
+  .information {
+    display: flex;
+    height: 570px;
+    &__left {
+      width: 50%;
+      background: #212529;
+      .left__holder {
+        padding-left: 255px;
+        h3 {
+          color: rgb(243, 243, 243);
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 29px;
+          letter-spacing: 0%;
+          margin-bottom: 25px;
+          margin-top: 111px;
+        }
+        p {
+          width: 600px;
+          color: rgb(243, 243, 243);
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 130%;
+          letter-spacing: 0%;
+          margin-bottom: 41px;
+        }
+        .link__div {
+          display: flex;
+          gap: 10px;
+          a {
+            color: rgb(4, 255, 20);
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+            letter-spacing: 0%;
+            align-items: center;
+          }
+        }
+      }
+    }
+    &__right {
+      width: 50%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .working__type {
+    display: flex;
+    .working__right {
+      margin-left: 136px;
+    }
+  }
+  .expedition {
+    height: 763px;
+    background: #272b30;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .card__holder {
+      display: flex;
+      gap: 30px;
+      .card {
+        max-width: 450px;
+        max-height: 523px;
+        background: rgb(33, 37, 41);
+        padding: 30px;
+        h2 {
+          color: rgb(243, 243, 243);
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 29px;
+          letter-spacing: 0%;
+          margin-bottom: 20px;
+          text-align: left;
+        }
+        p {
+          color: rgb(243, 243, 243);
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 130%;
+          letter-spacing: 0%;
+          margin-bottom: 60px;
+          width: 390px;
+        }
+      }
+    }
+  }
+  .mission {
+    background-image: url("../images/mission_bg.png");
+    width: 1920px;
+    height: 400px;
+    padding-left: 255px;
+    &__title {
+      color: rgb(243, 243, 243);
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 44px;
+      letter-spacing: 0%;
+      margin-bottom: 20px;
+      padding-top: 114px;
+    }
+    &__text {
+      color: rgb(243, 243, 243);
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 130%;
+      letter-spacing: 0%;
+      margin-bottom: 24px;
+      width: 516px;
+    }
+    &__subtext {
+      color: rgb(243, 243, 243);
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 130%;
+      letter-spacing: 0%;
+    }
+  }
+  .company__holder {
+    width: 1920px;
+    height: 1272px;
+    background: rgb(33, 37, 41);
+    .desc__wrapper {
+      display: flex;
+      gap: 110px;
+      justify-content: center;
+      align-items: center;
+      padding-top: 109px;
+      margin-bottom: 120px;
+      .desc__frame {
+        .desc__title {
+          color: rgb(243, 243, 243);
+          font-size: 36px;
+          font-weight: 700;
+          line-height: 44px;
+          letter-spacing: 0%;
+          margin-bottom: 20px;
+        }
+        .desc__subtitle {
+          color: rgb(243, 243, 243);
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 29px;
+          letter-spacing: 0%;
+        }
+      }
+      .descList__frame {
+        list-style: square;
+        li::marker {
+          color: rgb(4, 255, 20);
+        }
+        li {
+          color: rgb(243, 243, 243);
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 180%;
+          letter-spacing: 0%;
+        }
+      }
+    }
+    .career__holder {
+      width: 1410px;
+      height: 450px;
+      display: flex;
+      margin: 0 auto;
+      margin-bottom: 120px;
+      .career__left {
+        width: 600px;
+        background: rgb(82, 31, 132);
+        padding-left: 120px;
+        padding-top: 119px;
+        position: relative;
+        h3 {
+          color: rgb(243, 243, 243);
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 180%;
+          letter-spacing: 0%;
+          margin-bottom: 20px;
+        }
+        h4 {
+          color: rgb(164, 102, 225);
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 180%;
+          letter-spacing: 0%;
+        }
+        p {
+          color: rgb(164, 102, 225);
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 180%;
+          letter-spacing: 0%;
+          margin-bottom: 35px;
+        }
+        .career__btn {
+          width: 288px;
+          height: 46px;
+          box-sizing: border-box;
+          border: 2px solid rgb(243, 243, 243);
+          background: transparent;
+          a {
+            color: rgb(243, 243, 243);
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 130%;
+            letter-spacing: 0%;
+          }
+        }
+        .career__btn:hover {
+          background-color: white;
+          transition: 0.8s;
+          a {
+            color: #212529;
+          }
+        }
+        .up {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+        }
+      }
+    }
+    .partner__page {
+      width: 1410px;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      margin-bottom: 148px;
+      .partner__title {
+        color: rgb(243, 243, 243);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-bottom: 78px;
+      }
+      .icons__frame {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+    }
+  }
+}
